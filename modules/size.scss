@@ -1,0 +1,30 @@
+@each $size in 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 50 {
+  // margin 相关
+  .mg-#{$size} {
+    margin: #{$size}px;
+  }
+
+  .mt-#{$size} {
+    margin: #{$size}px 0 0 0;
+  }
+
+  .mr-#{$size} {
+    margin: 0 #{$size}px 0 0;
+  }
+
+  .mb-#{$size} {
+    margin: 0 0 #{$size}px 0;
+  }
+
+  .ml-#{$size} {
+    margin: 0 0 0 #{$size}px;
+  }
+
+  // padding 相关
+
+  // 圆角
+  .radius-#{$size} {
+    border-radius: #{$size}px;
+    overflow: hidden;
+  }
+}
