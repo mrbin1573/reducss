@@ -1,8 +1,8 @@
 {
   "name": "reducss",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "> 一个对常用的 css 进行封装的简单库，采用 scss 语言，让你写更少的 css，更专注于处理业务逻辑",
-  "main": "index.scss",
+  "main": "index.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
