@@ -1,30 +1,44 @@
-@each $size in 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 50 {
-  // margin 相关
-  .mg-#{$size} {
-    margin: #{$size}px;
+@import "../variable.scss";
+
+// margin
+@each $size in $marginSize {
+  @each $name, $direction in (mg, margin), (mt, margin-top), (mr, margin-right), (mb, margin-bottom), (ml, margin-left)
+  {
+    .#{$name}-#{$size} {
+      #{$direction}: #{$size}#{$suffix};
+    }
   }
+}
 
-  .mt-#{$size} {
-    margin: #{$size}px 0 0 0;
+// padding
+@each $size in $paddingSize {
+  @each $name, $direction in (pd, padding), (pt, padding-top), (pr, padding-right), (pb, padding-bottom),
+    (pl, padding-left)
+  {
+    .#{$name}-#{$size} {
+      #{$direction}: #{$size}#{$suffix};
+    }
   }
+}
 
-  .mr-#{$size} {
-    margin: 0 #{$size}px 0 0;
-  }
-
-  .mb-#{$size} {
-    margin: 0 0 #{$size}px 0;
-  }
-
-  .ml-#{$size} {
-    margin: 0 0 0 #{$size}px;
-  }
-
-  // padding 相关
-
-  // 圆角
+// border-radius
+@each $size in $radiusSize {
   .radius-#{$size} {
-    border-radius: #{$size}px;
+    border-radius: #{$size}#{$suffix};
     overflow: hidden;
+  }
+}
+
+// 字体大小
+@each $size in $fontSize {
+  .fs-#{$size} {
+    font-size: #{$size}#{$suffix};
+  }
+}
+
+// 字重
+@each $w in $fontWeight {
+  .fw-#{$w} {
+    font-weight: #{$w};
   }
 }

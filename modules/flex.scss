@@ -25,9 +25,9 @@
     justify-content: space-between;
   }
 
-  &-between {
+  &-around {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   &-grow-1 {

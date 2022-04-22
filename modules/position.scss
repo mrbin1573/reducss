@@ -1,0 +1,5 @@
+@each $position in static, relative, absolute, sticky, fixed, inline, inline-block {
+  .#{$position} {
+    position: #{$position};
+  }
+}
