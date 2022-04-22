@@ -1,0 +1,20 @@
+{
+  "name": "reducss",
+  "version": "1.0.2",
+  "description": "> 一个对常用的 css 进行封装的简单库，采用 scss 语言，让你写更少的 css，更专注于处理业务逻辑",
+  "main": "index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbin1573/reducss.git"
+  },
+  "keywords": [],
+  "author": "mrbin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrbin1573/reducss/issues"
+  },
+  "homepage": "https://github.com/mrbin1573/reducss#readme"
+}

@@ -2,6 +2,16 @@
 
 > 一个对常用的 css 进行封装的简单库，采用 scss 语言，让你写更少的 css，更专注于处理业务逻辑
 
+# 安装使用
+
+## 安装
+
+```cmd
+npm install reducss
+```
+
+## 使用
+
 ```hmtl
 <div class="mt-10 pd-10 radius-20 fs-20 fw-bold"></div>
 ```
