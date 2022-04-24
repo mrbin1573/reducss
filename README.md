@@ -39,8 +39,8 @@ import "reducss"
   - flex-shrink-1: flex-shrink: 1;
   - flex-shrink-0: flex-shrink: 0;
 
-- margin: `mg-x` `mt-x` `mr-x` `mb-x` `ml-x`
-- padding: `pd-x` `pt-x` `pr-r` `pb-x` `pl-x`
+- margin: `mg-x` `mt-x` `mr-x` `mb-x` `ml-x` `mlr-x` `mtb-x`
+- padding: `pd-x` `pt-x` `pr-r` `pb-x` `pl-x` `plr-x` `ptb-x`
 - radius: `radius-x`
   会自动添加`overflow: hidden`
   额外的值（p 是 percent 的缩写）

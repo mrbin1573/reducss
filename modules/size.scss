@@ -8,6 +8,14 @@
       #{$direction}: #{$size}#{$suffix};
     }
   }
+  .mtb-#{$size} {
+    margin-top: #{$size}#{$suffix};
+    margin-bottom: #{$size}#{$suffix};
+  }
+  .mlr-#{$size} {
+    margin-left: #{$size}#{$suffix};
+    margin-right: #{$size}#{$suffix};
+  }
 }
 
 // padding
@@ -18,6 +26,14 @@
     .#{$name}-#{$size} {
       #{$direction}: #{$size}#{$suffix};
     }
+  }
+  .ptb-#{$size} {
+    padding-top: #{$size}#{$suffix};
+    padding-bottom: #{$size}#{$suffix};
+  }
+  .plr-#{$size} {
+    padding-left: #{$size}#{$suffix};
+    padding-bottom: #{$size}#{$suffix};
   }
 }
 
