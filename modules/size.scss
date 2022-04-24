@@ -4,9 +4,21 @@
 @each $size in $widthHeightSize {
   @each $name, $style in (w, width), (h, height) {
     .#{$name}-#{$size} {
-      #{$style}: #{$size}#{$suffix};
+      #{$style}: #{$size * $ratio}#{$suffix};
     }
   }
+}
+.w-50p {
+  width: 50%;
+}
+.w-100p {
+  width: 100%;
+}
+.h-50p {
+  height: 50%;
+}
+.h-100p {
+  height: 100%;
 }
 
 // margin
@@ -14,16 +26,16 @@
   @each $name, $direction in (mg, margin), (mt, margin-top), (mr, margin-right), (mb, margin-bottom), (ml, margin-left)
   {
     .#{$name}-#{$size} {
-      #{$direction}: #{$size}#{$suffix};
+      #{$direction}: #{$size * $ratio}#{$suffix};
     }
   }
   .mtb-#{$size} {
     margin-top: #{$size}#{$suffix};
-    margin-bottom: #{$size}#{$suffix};
+    margin-bottom: #{$size * $ratio}#{$suffix};
   }
   .mlr-#{$size} {
-    margin-left: #{$size}#{$suffix};
-    margin-right: #{$size}#{$suffix};
+    margin-left: #{$size * $ratio}#{$suffix};
+    margin-right: #{$size * $ratio}#{$suffix};
   }
 }
 
@@ -33,23 +45,23 @@
     (pl, padding-left)
   {
     .#{$name}-#{$size} {
-      #{$direction}: #{$size}#{$suffix};
+      #{$direction}: #{$size * $ratio}#{$suffix};
     }
   }
   .ptb-#{$size} {
-    padding-top: #{$size}#{$suffix};
-    padding-bottom: #{$size}#{$suffix};
+    padding-top: #{$size * $ratio}#{$suffix};
+    padding-bottom: #{$size * $ratio}#{$suffix};
   }
   .plr-#{$size} {
-    padding-left: #{$size}#{$suffix};
-    padding-bottom: #{$size}#{$suffix};
+    padding-left: #{$size * $ratio}#{$suffix};
+    padding-bottom: #{$size * $ratio}#{$suffix};
   }
 }
 
 // border-radius
 @each $size in $radiusSize {
   .radius-#{$size} {
-    border-radius: #{$size}#{$suffix};
+    border-radius: #{$size * $ratio}#{$suffix};
     overflow: hidden;
   }
 }
@@ -65,7 +77,7 @@
 // 字体大小
 @each $size in $fontSize {
   .fs-#{$size} {
-    font-size: #{$size}#{$suffix};
+    font-size: #{$size * $ratio}#{$suffix};
   }
 }
 
