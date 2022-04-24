@@ -28,6 +28,14 @@
     overflow: hidden;
   }
 }
+.radius-100p {
+  border-radius: 100%;
+  overflow: hidden;
+}
+.radius-50p {
+  border-radius: 50%;
+  overflow: hidden;
+}
 
 // 字体大小
 @each $size in $fontSize {
