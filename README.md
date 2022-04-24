@@ -12,9 +12,38 @@ npm install reducss
 
 ## 使用
 
+### 示例
+
 ```hmtl
 <div class="mt-10 pd-10 radius-20 fs-20 fw-bold"></div>
 ```
+
+### 可用项
+
+- flex: `flex-xx`
+
+  - flex-row: flex-direction: row;
+  - flex-column: flex-direction: column;
+  - flex-mid: align-items: center;
+  - flex-center: justify-content: center;
+  - flex-between: justify-content: space-between;
+  - flex-around: justify-content: space-around;
+  - flex-grow-1: flex-grow: 1;
+  - flex-grow-0: flex-grow: 0;
+  - flex-shrink-1: flex-shrink: 1;
+  - flex-shrink-0: flex-shrink: 0;
+
+- margin: `mg-x` `mt-x` `mr-x` `mb-x` `ml-x`
+  默认 2~20 偶数值
+- padding: `pd-x` `pt-x` `pr-r` `pb-x` `pl-x`
+  默认 2~20 偶数值
+- radius: `r-x`
+  默认 2~20 偶数值
+- fontSize: `fs-x`
+  默认 8~30 偶数值
+- fontWight: `fw-x`
+  默认 100~1000 以及`thin` `lighter` `light` `normal` `medium` `bold` `bolder`
+- position
 
 # 优缺点
 
@@ -26,15 +55,5 @@ npm install reducss
 
 ## 缺点
 
-- 😔 会有用不上的`css`；和减少的代码量相比微不足道
-- 😔 对`vue scoped`不友好；使用`scoped`生成`data-xxx`的 css
-
-# 可使用属性
-
-- 尺寸相关
-  - margin
-  - padding
-  - border-radius
-  - font-size
-- flex 布局
-- position
+- 😔 会有用不上的`css`；和减少的代码量相比微不足道，还可通过`variable.scss`减少无用代码
+- 😔 需要花少量时间熟记 `class` 属性，不过都是首字母缩写很好记忆
