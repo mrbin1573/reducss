@@ -40,16 +40,34 @@ import "reducss"
   - flex-shrink-0: flex-shrink: 0;
 
 - margin: `mg-x` `mt-x` `mr-x` `mb-x` `ml-x`
-  默认 2~20 偶数值
 - padding: `pd-x` `pt-x` `pr-r` `pb-x` `pl-x`
-  默认 2~20 偶数值
 - radius: `radius-x`
-  默认 2~20 偶数值
+  会自动添加`overflow: hidden`
+  额外的值（p 是 percent 的缩写）
+  - radius-50p：`border-radius: 50%`
+  - radius-10p：`border-radius: 100%`
 - fontSize: `fs-x`
-  默认 8~30 偶数值
 - fontWight: `fw-x`
-  默认 100~1000 以及`thin` `lighter` `light` `normal` `medium` `bold` `bolder`
-- position
+- position: 直接使用`static` `relative` `absolute` `sticky` `fixed` `inline` `inline-block`
+
+### 自定义变量
+
+在项目全局定义以下 `scss` 变量即可覆盖封装的值（内部会按如下变量循环，需要列出所有你使用的值），修改值可能需要重启才能生效
+以下为封装的所有原始可用值
+
+```scss
+$suffix: "px"; // 尺寸的单位,可替换为em rem rpx等任意单位
+
+$marginSize: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20;
+
+$paddingSize: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20;
+
+$radiusSize: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20;
+
+$fontSize: 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30;
+
+$fontWeight: 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, thin, lighter, light, normal, medium, bold, bolder;
+```
 
 # 优缺点
 
