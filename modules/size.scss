@@ -1,5 +1,14 @@
 @import "../variable.scss";
 
+// width height
+@each $size in $widthHeightSize {
+  @each $name, $style in (w, width), (h, height) {
+    .#{$name}-#{$size} {
+      #{$style}: #{$size}#{$suffix};
+    }
+  }
+}
+
 // margin
 @each $size in $marginSize {
   @each $name, $direction in (mg, margin), (mt, margin-top), (mr, margin-right), (mb, margin-bottom), (ml, margin-left)

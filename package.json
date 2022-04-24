@@ -1,6 +1,6 @@
 {
   "name": "reducss",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "> 一个对常用的 css 进行封装库，采用 scss 语言，可自定义变量，让你写更少的 css，更专注于处理业务逻辑",
   "main": "index.scss",
   "scripts": {

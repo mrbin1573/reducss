@@ -39,6 +39,8 @@ import "reducss"
   - flex-shrink-1: flex-shrink: 1;
   - flex-shrink-0: flex-shrink: 0;
 
+- width: `w-xx`
+- height: `h-xx`
 - margin: `mg-x` `mt-x` `mr-x` `mb-x` `ml-x` `mlr-x` `mtb-x`
 - padding: `pd-x` `pt-x` `pr-r` `pb-x` `pl-x` `plr-x` `ptb-x`
 - radius: `radius-x`
@@ -57,6 +59,8 @@ import "reducss"
 
 ```scss
 $suffix: "px"; // 尺寸的单位,可替换为em rem rpx等任意单位
+
+$widthHeightSize: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40;
 
 $marginSize: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20;
 
