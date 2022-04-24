@@ -10,6 +10,12 @@
 npm install reducss
 ```
 
+main.js 中引入
+
+```js
+import "reducss"
+```
+
 ## 使用
 
 ### 示例
@@ -37,7 +43,7 @@ npm install reducss
   默认 2~20 偶数值
 - padding: `pd-x` `pt-x` `pr-r` `pb-x` `pl-x`
   默认 2~20 偶数值
-- radius: `r-x`
+- radius: `radius-x`
   默认 2~20 偶数值
 - fontSize: `fs-x`
   默认 8~30 偶数值
