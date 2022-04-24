@@ -64,7 +64,7 @@ import "reducss"
 ```scss
 $suffix: "px"; // 尺寸的单位,可替换为em rem rpx等任意单位
 
-$ratio: 1 !default; // 单位换算比例，如2 mt-2 就是 margin-top 2*2px（$suffix）
+$ratio: 1; // 单位换算比例，如2 mt-2 就是 margin-top 2*2px（$suffix）
 
 $widthHeightSize: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40;
 
