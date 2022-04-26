@@ -49,4 +49,7 @@
     display: flex;
     flex-shrink: 0;
   }
+  &-wrap {
+    flex-wrap: wrap;
+  }
 }

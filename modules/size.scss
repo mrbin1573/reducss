@@ -58,6 +58,15 @@
   }
 }
 
+// top,right,bottom,left
+@each $size in $distance {
+  @each $name, $direction in (t, top), (r, right), (b, bottom), (l, left), (pl, padding-left) {
+    .#{$name}-#{$size} {
+      #{$direction}: #{$size * $ratio}#{$suffix};
+    }
+  }
+}
+
 // border-radius
 @each $size in $radiusSize {
   .radius-#{$size} {
